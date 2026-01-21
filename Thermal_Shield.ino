@@ -30,6 +30,10 @@ short PWM_resistenza, PWM_ventola;    // valore da applicare a pin PWM
 Pulsante Start (4, INPUT_PULLUP, 'n');
 Pulsante Stop (5, INPUT_PULLUP, 'n');
 
+#define pinResistenza 10
+#define pinVentola 11
+#define pinTemp A0
+
 // variabili di stato e definizione stati
 char stato, stato_old;
 #define ATTESA 0
@@ -76,7 +80,7 @@ void FTS () {
   stato_old = stato;
 
   // stato = ATTESA se STOP
-  if (Stop.f_UP || lettura == 's')
+  if (Stop.f_UP || lettura == '0')
     stato = ATTESA;
 
   // FTS con controllo temperature (mantenimento tra T_min e T_max)
@@ -107,7 +111,8 @@ void FTU () {
     case RAFFREDDA:
       PWM_resistenza = 0;
       // PWM_ventola proporzionale alla differenza di temperatura (più veloce se errore grande)
-      PWM_ventola = (byte) 230 /5 *(T_med - T_min) + 10;
+      double kp = 230, q = 10;
+      PWM_ventola = (byte) kp /(T_max - T_min) *(T_med - T_min) + q;
       break;
     case ATTESA:
     default:
@@ -131,7 +136,7 @@ void leggiAnalog () {
 
     T_last = T;
 
-    T_value = analogRead (A0);            // lettura analogica di A0
+    T_value = analogRead (pinTemp);            // lettura analogica di A0
     // calcolo Temperatura con proporzione  
     // lettura : 1023 = T : T_max
 
@@ -160,8 +165,8 @@ void scriviDigital () {
 }
 void scriviAnalog () {
   // assegnazione valori pin analogici
-  analogWrite(10, PWM_resistenza);   // scrittura analogica PWM su pin 10 (resistenza)
-  analogWrite(11, PWM_ventola);
+  analogWrite(pinResistenza, PWM_resistenza);   // scrittura analogica PWM su pin 10 (resistenza)
+  analogWrite(pinVentola, PWM_ventola);
 }
 void scriviSerial () {
   // scrittura seriale ogni 100 ms (in formato Serial Plotter)
