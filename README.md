@@ -8,7 +8,6 @@ Un progetto Arduino per il controllo della temperatura tramite una scheda termic
 - Scheda termica
 - Ventola 12 V
 - Ponte H
-<br>
 
 ## 🌡️ Scheda termica:
 La scheda termica utilizzata nel nostro sistema è stata realizzata dalla nostra scuola, Istituto Max Planck (Villorba, TV).
@@ -48,7 +47,7 @@ Generica ventola 12 V (es. ventola da PC).<br><br>
 
 ❗ Collegare 5 V del ponte H a $V_{in}$ di Arduino se si vuole far funzionare il sistema indipendente dall'alimentazione USB. <br>
 ⚠️ In questo caso, **alimentare il ponte H prima di collegare Arduino con USB** per evitare problemi di alimentazione.
-<br>
+<br><br>
 
 ### 🔌 Ponte H:
 È possibile usare un qualsiasi ponte H. <br>
@@ -60,6 +59,7 @@ Collegare il pin IN3 (se si utilizza il "ramo" B) ad un'uscita PWM di Arduino (p
 
 #### ❗ Alternative:
 Se non si dispone di un ponte H è possibile sostituirlo con un circuito a transistor con dovuto dimensionamento.
+<br>
 
 ### ⚙️ Filtro segnale PWM:
 Poiché il segnale PWM potrebbe non essere propriamente adatto alla tua ventola è consigliabile realizzare un filtro RC come quello di seguito riportato. <br>
