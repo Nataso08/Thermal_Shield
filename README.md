@@ -10,7 +10,7 @@ Un progetto Arduino per il controllo della temperatura tramite una scheda termic
 - Ponte H
 
 ## 🌡️ Scheda termica:
-La scheda termica utilizzata nel nostro sistema è stata realizzata dalla nostra scuola, Istituto Max Planck (Villorba, TV).
+La scheda termica utilizzata nel nostro sistema è stata realizzata dalla nostra scuola, [Istituto Max Planck (Villorba, TV)](https://maxplanck.edu.it).
 
 ### 📐 Struttura:
 La scheda termica è strutturata su un PCB e si presenta come riportato nelle seguenti immagini.
