@@ -2000,6 +2000,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 33.02) (xy 113.03 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01c57503-321e-43fb-8c44-8cf377ffe98b")
+	)
+	(wire
+		(pts
 			(xy 195.58 109.22) (xy 195.58 114.3)
 		)
 		(stroke
@@ -2240,7 +2250,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 33.02) (xy 113.03 36.83)
+			(xy 118.11 33.02) (xy 118.11 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2417,16 +2427,6 @@
 			(type default)
 		)
 		(uuid "87b3f6f0-95e7-4020-9448-769679898c45")
-	)
-	(wire
-		(pts
-			(xy 118.11 33.02) (xy 118.11 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88e7e0ff-04a6-4f02-87b8-dff431a55ea7")
 	)
 	(wire
 		(pts
@@ -2754,7 +2754,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 118.11 36.83 270)
+		(at 113.03 36.83 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2764,7 +2764,7 @@
 		)
 		(uuid "48a2b040-927a-4c22-ab6f-6de09ccd9ad7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.11 43.6857 90)
+			(at 113.03 43.6857 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2798,7 +2798,7 @@
 	)
 	(global_label "IN_12"
 		(shape input)
-		(at 113.03 36.83 270)
+		(at 118.11 36.83 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2808,7 +2808,7 @@
 		)
 		(uuid "93ed55b7-a71e-4f53-8b6c-bbe9f1e161c8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.03 45.1371 90)
+			(at 118.11 45.1371 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2960,7 +2960,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02711ec2-14ec-4e96-a8f2-aa16b6800546")
-		(property "Reference" "R8"
+		(property "Reference" "R4"
 			(at 172.72 93.9799 0)
 			(effects
 				(font
@@ -2978,7 +2978,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 171.958 95.25 90)
 			(effects
 				(font
@@ -3014,7 +3014,7 @@
 		(instances
 			(project "Thermal_Shield"
 				(path "/86db98c8-2a21-4833-9f48-3f46b4aadc3c"
-					(reference "R8")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -3030,7 +3030,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bd3ada3-51ce-4353-9798-80147b9b0fd7")
-		(property "Reference" "R3"
+		(property "Reference" "R8"
 			(at 207.01 113.0299 0)
 			(effects
 				(font
@@ -3048,7 +3048,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Box_L26.0mm_W5.0mm_P20.00mm"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal"
 			(at 202.692 114.3 90)
 			(effects
 				(font
@@ -3084,7 +3084,7 @@
 		(instances
 			(project ""
 				(path "/86db98c8-2a21-4833-9f48-3f46b4aadc3c"
-					(reference "R3")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -3118,7 +3118,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 66.548 106.68 90)
 			(effects
 				(font
@@ -3264,7 +3264,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:CERDIP-8_W7.62mm_SideBrazed"
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 107.95 102.87 0)
 			(effects
 				(font
@@ -3334,7 +3334,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a64a203-7809-4ac4-a897-a3ab020d783a")
-		(property "Reference" "R2"
+		(property "Reference" "R1"
 			(at 45.72 105.4099 0)
 			(effects
 				(font
@@ -3352,7 +3352,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 44.958 106.68 90)
 			(effects
 				(font
@@ -3388,7 +3388,7 @@
 		(instances
 			(project "Thermal_Shield"
 				(path "/86db98c8-2a21-4833-9f48-3f46b4aadc3c"
-					(reference "R2")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -3486,7 +3486,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
 			(at 193.675 124.46 0)
 			(effects
 				(font
@@ -3641,7 +3641,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "594ddcc7-99ec-496e-ba5e-8a588ea1453e")
-		(property "Reference" "R1"
+		(property "Reference" "R2"
 			(at 57.15 105.4099 0)
 			(effects
 				(font
@@ -3659,7 +3659,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 56.388 106.68 90)
 			(effects
 				(font
@@ -3695,7 +3695,7 @@
 		(instances
 			(project "Thermal_Shield"
 				(path "/86db98c8-2a21-4833-9f48-3f46b4aadc3c"
-					(reference "R1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -3711,7 +3711,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74a7b1ce-afb9-4f78-a588-a7386cd63d6b")
-		(property "Reference" "R7"
+		(property "Reference" "R5"
 			(at 90.17 81.28 90)
 			(effects
 				(font
@@ -3727,7 +3727,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 90.17 85.852 90)
 			(effects
 				(font
@@ -3763,7 +3763,7 @@
 		(instances
 			(project "Thermal_Shield"
 				(path "/86db98c8-2a21-4833-9f48-3f46b4aadc3c"
-					(reference "R7")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -3795,7 +3795,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L9.0mm_W2.5mm_P7.50mm_MKT"
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2"
 			(at 109.22 145.7452 0)
 			(effects
 				(font
@@ -3912,13 +3912,13 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:BC337")
-		(at 184.15 133.35 270)
+		(at 184.15 133.35 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b00a8a8b-2960-4f00-9288-dcd73b990514")
 		(property "Reference" "Q3"
 			(at 184.15 139.7 90)
@@ -3936,8 +3936,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 182.245 138.43 0)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
+			(at 186.055 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4101,7 +4101,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
 			(at 172.085 111.76 0)
 			(effects
 				(font
@@ -4195,7 +4195,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
 			(at 138.43 123.19 0)
 			(effects
 				(font
@@ -4265,7 +4265,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e4a10be4-5cf7-4402-9496-83d56d06294c")
-		(property "Reference" "R5"
+		(property "Reference" "R7"
 			(at 140.97 92.7099 0)
 			(effects
 				(font
@@ -4283,7 +4283,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 140.208 93.98 90)
 			(effects
 				(font
@@ -4319,7 +4319,7 @@
 		(instances
 			(project "Thermal_Shield"
 				(path "/86db98c8-2a21-4833-9f48-3f46b4aadc3c"
-					(reference "R5")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -4335,7 +4335,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9165393-e965-43b4-83ab-a78a1dff12bc")
-		(property "Reference" "R4"
+		(property "Reference" "R3"
 			(at 198.12 97.7899 0)
 			(effects
 				(font
@@ -4353,7 +4353,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
 			(at 197.358 99.06 90)
 			(effects
 				(font
@@ -4389,7 +4389,7 @@
 		(instances
 			(project "Thermal_Shield"
 				(path "/86db98c8-2a21-4833-9f48-3f46b4aadc3c"
-					(reference "R4")
+					(reference "R3")
 					(unit 1)
 				)
 			)
