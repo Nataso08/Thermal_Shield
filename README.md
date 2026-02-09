@@ -21,10 +21,11 @@ La scheda termica è strutturata su un PCB e si presenta come riportato nelle se
   <img src="assets/Scheda_BOTTOM.jpg" alt="Scheda, sotto" width="50%">
 </div>
 
-<br>
+### 🖇️ Schema
 Di seguito è riportato lo schema elettrico della scheda. <br>
-<a src="Thermal_Shield/Thermal_Shield.kicad_sch" title="Schema">Schema elettrico</a> <br>
-<a src="Thermal_Shield/Thermal_Shield.kicad_pcb" title="PCB">PCB</a> <br>
+![Schema elettrico della scheda](assets/schema.png)
+
+[Progetto Kicad](./Thermal_Shield/Thermal_Shield.kicad_pro)
 
 ### 🔌 Collegamenti:
 
