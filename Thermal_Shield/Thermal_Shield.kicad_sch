@@ -1167,7 +1167,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Sensor_Temperature:LM35-D"
+		(symbol "Sensor_Temperature:LM35-LP"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1179,7 +1179,7 @@
 					)
 				)
 			)
-			(property "Value" "LM35-D"
+			(property "Value" "LM35-LP"
 				(at 1.27 6.35 0)
 				(effects
 					(font
@@ -1188,12 +1188,13 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-				(at 0 -10.16 0)
+			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+				(at 1.27 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 					(hide yes)
 				)
 			)
@@ -1206,7 +1207,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Precision centigrade temperature sensor, SOIC-8"
+			(property "Description" "Precision centigrade temperature sensor, TO-92"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1224,7 +1225,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*"
+			(property "ki_fp_filters" "TO?92*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1233,7 +1234,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "LM35-D_0_1"
+			(symbol "LM35-LP_0_1"
 				(rectangle
 					(start -7.62 5.08)
 					(end 7.62 -5.08)
@@ -1364,45 +1365,7 @@
 					)
 				)
 			)
-			(symbol "LM35-D_1_1"
-				(pin no_connect line
-					(at -2.54 5.08 270)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -2.54 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+			(symbol "LM35-LP_1_1"
 				(pin power_in line
 					(at 0 7.62 270)
 					(length 2.54)
@@ -1413,7 +1376,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1431,64 +1394,7 @@
 							)
 						)
 					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 5.08 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1506,7 +1412,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1933,6 +1839,12 @@
 		(uuid "43cc232b-114b-4785-b08e-f3ebc78d0028")
 	)
 	(junction
+		(at 121.92 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a3df15f-d5de-48d4-baab-404f7b772ef5")
+	)
+	(junction
 		(at 184.15 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1975,28 +1887,28 @@
 		(uuid "c213962a-6290-4c6b-ad36-20959c65789e")
 	)
 	(junction
+		(at 138.43 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8c4fe87-4e93-45a1-8301-170179d6e02d")
+	)
+	(junction
 		(at 64.77 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cf3f3b75-2680-4713-88ac-717cacb86c89")
 	)
 	(junction
+		(at 124.46 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d8fae4cc-4de7-4aa0-b16e-0a118e3a1bc9")
+	)
+	(junction
 		(at 195.58 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dd0d66d0-4843-4b08-a9ea-e29c567f1c16")
-	)
-	(junction
-		(at 105.41 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f2471209-3d08-4657-bea3-b5dd94db0557")
-	)
-	(junction
-		(at 124.46 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fe1b2119-2475-45e9-8a22-28b928df2a2d")
 	)
 	(wire
 		(pts
@@ -2030,7 +1942,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 113.03) (xy 124.46 113.03)
+			(xy 97.79 111.76) (xy 124.46 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2090,6 +2002,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 102.87) (xy 138.43 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28ecc07b-9fe7-47f9-aa31-ce7d37455998")
+	)
+	(wire
+		(pts
 			(xy 170.18 99.06) (xy 170.18 101.6)
 		)
 		(stroke
@@ -2100,7 +2022,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 30.48) (xy 148.59 33.02)
+			(xy 153.67 34.29) (xy 153.67 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2120,7 +2042,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 110.49) (xy 124.46 113.03)
+			(xy 124.46 110.49) (xy 124.46 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2160,7 +2082,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 24.13) (xy 151.13 33.02)
+			(xy 151.13 40.64) (xy 151.13 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2170,17 +2092,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 30.48) (xy 153.67 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bc37f69-f9bc-4061-9071-ac09c162abb7")
-	)
-	(wire
-		(pts
-			(xy 124.46 113.03) (xy 128.27 113.03)
+			(xy 124.46 111.76) (xy 128.27 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2370,6 +2282,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 102.87) (xy 138.43 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "752a777f-ccbe-4046-ae01-f35efcdca14a")
+	)
+	(wire
+		(pts
 			(xy 105.41 92.71) (xy 121.92 92.71)
 		)
 		(stroke
@@ -2380,7 +2302,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 120.65) (xy 138.43 121.92)
+			(xy 138.43 119.38) (xy 138.43 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2440,7 +2362,17 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 113.03) (xy 97.79 105.41)
+			(xy 148.59 31.75) (xy 148.59 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ed2a815-aea5-4726-b991-edde9870c181")
+	)
+	(wire
+		(pts
+			(xy 97.79 111.76) (xy 97.79 105.41)
 		)
 		(stroke
 			(width 0)
@@ -2470,6 +2402,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 121.92) (xy 105.41 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b22ab21-79c8-4f28-ab41-30856f936907")
+	)
+	(wire
+		(pts
 			(xy 43.18 110.49) (xy 43.18 133.35)
 		)
 		(stroke
@@ -2480,6 +2422,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 97.79) (xy 138.43 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a60019c4-9655-4a15-a7cb-c0a037ff3a9d")
+	)
+	(wire
+		(pts
 			(xy 204.47 105.41) (xy 204.47 110.49)
 		)
 		(stroke
@@ -2487,26 +2439,6 @@
 			(type default)
 		)
 		(uuid "a775d2e4-b1bd-4f6d-98cf-5bb65dbd86b5")
-	)
-	(wire
-		(pts
-			(xy 105.41 144.78) (xy 105.41 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b321e58e-93a9-4305-8e2f-489e6f577993")
-	)
-	(wire
-		(pts
-			(xy 138.43 97.79) (xy 138.43 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b49ae1db-0f58-470c-a76b-b9e2ba5cef19")
 	)
 	(wire
 		(pts
@@ -2610,16 +2542,6 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 133.35) (xy 107.95 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce55f220-e2a3-499a-bb7b-e2bafb802809")
-	)
-	(wire
-		(pts
 			(xy 105.41 110.49) (xy 105.41 121.92)
 		)
 		(stroke
@@ -2630,7 +2552,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 133.35) (xy 105.41 133.35)
+			(xy 43.18 133.35) (xy 107.95 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2708,46 +2630,68 @@
 		)
 		(uuid "fd86be8b-3e5c-49a2-8e03-daae5dc78a43")
 	)
-	(global_label "V_T"
+	(global_label "GND"
 		(shape input)
-		(at 151.13 24.13 90)
+		(at 148.59 34.29 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "0ea9a18c-50d3-4be4-a543-08f905edece2")
+		(uuid "03d78346-c8d8-4e33-a7db-8c49016ef98f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.13 18.121 90)
+			(at 148.59 41.1457 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
-	(global_label "PMW"
+	(global_label "V_T"
 		(shape input)
-		(at 153.67 30.48 90)
+		(at 151.13 40.64 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "3a02e34f-d4b6-447f-95d9-b16ab33f65b5")
+		(uuid "0ea9a18c-50d3-4be4-a543-08f905edece2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 153.67 23.322 90)
+			(at 151.13 46.649 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PWM"
+		(shape input)
+		(at 153.67 34.29 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3a02e34f-d4b6-447f-95d9-b16ab33f65b5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 153.67 41.448 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2770,28 +2714,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GND"
-		(shape input)
-		(at 148.59 30.48 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8197a8d0-c0ff-4fb4-89f9-c75ae60c13fb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 148.59 23.6243 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -2960,7 +2882,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02711ec2-14ec-4e96-a8f2-aa16b6800546")
-		(property "Reference" "R4"
+		(property "Reference" "R7"
 			(at 172.72 93.9799 0)
 			(effects
 				(font
@@ -3014,7 +2936,7 @@
 		(instances
 			(project "Thermal_Shield"
 				(path "/86db98c8-2a21-4833-9f48-3f46b4aadc3c"
-					(reference "R4")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -3155,6 +3077,80 @@
 			(project "Thermal_Shield"
 				(path "/86db98c8-2a21-4833-9f48-3f46b4aadc3c"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:LM35-LP")
+		(at 138.43 111.76 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15e6a256-6389-4ffb-8857-80d1c2182aff")
+		(property "Reference" "U1"
+			(at 147.32 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LM35-LP"
+			(at 147.32 113.0299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
+			(at 137.16 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm35.pdf"
+			(at 138.43 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Precision centigrade temperature sensor, TO-92"
+			(at 138.43 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db74d2fe-ad12-427f-9102-80f124e9dcae")
+		)
+		(pin "3"
+			(uuid "2d54e53d-719a-4ce9-b190-77973b48e2a6")
+		)
+		(pin "2"
+			(uuid "67ce5b8b-b631-4619-89da-a5ac268ea9c9")
+		)
+		(instances
+			(project ""
+				(path "/86db98c8-2a21-4833-9f48-3f46b4aadc3c"
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -3839,7 +3835,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 151.13 38.1 270)
+		(at 151.13 26.67 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3848,7 +3844,7 @@
 		(fields_autoplaced yes)
 		(uuid "a482dbac-cfde-490f-818c-b15c1dd63464")
 		(property "Reference" "J1"
-			(at 156.21 36.8299 90)
+			(at 146.05 27.9401 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3857,7 +3853,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x03"
-			(at 156.21 39.3699 90)
+			(at 146.05 25.4001 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3866,7 +3862,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-03P_1x03_P5.00mm"
-			(at 151.13 38.1 0)
+			(at 151.13 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3875,7 +3871,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 38.1 0)
+			(at 151.13 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3884,7 +3880,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 151.13 38.1 0)
+			(at 151.13 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4077,8 +4073,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:BC337")
-		(at 170.18 106.68 90)
-		(mirror x)
+		(at 170.18 106.68 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4102,7 +4097,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
-			(at 172.085 111.76 0)
+			(at 168.275 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4168,94 +4163,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Sensor_Temperature:LM35-D")
-		(at 138.43 113.03 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d3a141d0-dcd5-4836-b669-e05c977f7085")
-		(property "Reference" "U1"
-			(at 147.32 114.3001 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LM35-D"
-			(at 147.32 111.7601 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
-			(at 138.43 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm35.pdf"
-			(at 138.43 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Precision centigrade temperature sensor, SOIC-8"
-			(at 138.43 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8ed9f54b-580c-470a-8696-10d87626663a")
-		)
-		(pin "4"
-			(uuid "3a0d150d-4e01-4e63-a4e7-c067fb33b536")
-		)
-		(pin "3"
-			(uuid "9c54ac38-828d-4094-a82e-fe08fec08a58")
-		)
-		(pin "2"
-			(uuid "ec16a8b8-1ae7-485b-9aae-bf08e50cb514")
-		)
-		(pin "5"
-			(uuid "b95f81f0-9a38-4917-ae6e-9cd22f138964")
-		)
-		(pin "6"
-			(uuid "ddf481c7-6360-4618-96bb-d7317d35a91a")
-		)
-		(pin "8"
-			(uuid "b5563ff4-5632-40c2-82e1-96cde57d6a27")
-		)
-		(pin "7"
-			(uuid "cec727cb-45df-477c-93b7-d2c3334e3a53")
-		)
-		(instances
-			(project ""
-				(path "/86db98c8-2a21-4833-9f48-3f46b4aadc3c"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 138.43 93.98 180)
 		(unit 1)
@@ -4265,7 +4172,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e4a10be4-5cf7-4402-9496-83d56d06294c")
-		(property "Reference" "R7"
+		(property "Reference" "R4"
 			(at 140.97 92.7099 0)
 			(effects
 				(font
@@ -4319,7 +4226,7 @@
 		(instances
 			(project "Thermal_Shield"
 				(path "/86db98c8-2a21-4833-9f48-3f46b4aadc3c"
-					(reference "R7")
+					(reference "R4")
 					(unit 1)
 				)
 			)
