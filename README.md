@@ -23,25 +23,25 @@ La scheda termica è strutturata su un PCB e si presenta come riportato nelle se
 
 <br>
 Di seguito è riportato lo schema elettrico della scheda. <br>
-[Schema elettrico](./Thermal_Shield/Thermal_Shield.kicad_sch) <br>
-[PCB](./Thermal_Shield/Thermal_Shield.kicad_pcb) <br>
+<a src="Thermal_Shield/Thermal_Shield.kicad_sch" title="Schema">Schema elettrico</a> <br>
+<a src="Thermal_Shield/Thermal_Shield.kicad_pcb" title="PCB">PCB</a> <br>
 
 ### 🔌 Collegamenti:
 
 - Alimentare la scheda (jack DC) ad una tensione di 12 V
 - Collegare Arduino UNO tramite la morsettiera:
-    - GND $\to$ GND
-    - $V_T$ $\to$ Ingresso Analogico di Arduino (A0 - A5)
-    - PWM $\to$ Uscita PWM di Arduino (pin 3, 5, 6, 9, 10 o 11)
+    - GND → GND
+    - $V_T$ → Ingresso Analogico di Arduino (A0 - A5)
+    - PWM → Uscita PWM di Arduino (pin 3, 5, 6, 9, 10 o 11)
 
 ## 💨 Ventola:
 Generica ventola 12 V (es. ventola da PC).<br><br>
 <img src="assets/Ventola.jpg" alt="Ventola 12 V" width="50%">
 
 ### 🔌 Collegamenti:
-- Power $\to$ alimentazione 12 V (tramite [ponte H](#ponte-h))
-- GND $\to$ GND (comune tra Arduino e alimentazione 12 V)
-- RPM $\to$ Pin interrupt di Arudino (2, 3)
+- Power → alimentazione 12 V (tramite [ponte H](#ponte-h))
+- GND → GND (comune tra Arduino e alimentazione 12 V)
+- RPM → Pin interrupt di Arudino (2, 3)
 
 ⚠️ **Non collegare GND all'uscita del ponte H, altrimenti l'encoder non funziona correttamente**. <br>
 ❗ Nel codice allegato non è presente la misurazione della velocità (RPM) ma è facilmente integrabile.
